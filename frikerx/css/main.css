@@ -1,0 +1,172 @@
+body {
+    background-color: #000;
+    color: #FFF;
+    margin: 0px;
+    font-family: 'Muli', sans-serif;
+}
+
+/* ********************** header  */
+
+h1 {
+    font-size: 45px;
+    font-style: italic;
+    font-weight: normal;
+    line-height: 1.5;
+    margin: 0;
+    margin-left: 30px;
+}
+strong {
+    color: #026fff;
+}
+
+h2 {
+    margin-left: 40px;
+}
+
+.hero {
+    height: 300px;
+    display: flex;  
+    justify-content: space-evenly;
+}
+
+.hero img {
+    margin-top: 5%;
+    width: 50%;
+    height: 200px;
+}
+
+/* ********************** Nav  */
+
+.nav {
+    background-color: #7acc2d;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.nav img {
+    width: 50px;
+    height: 50px;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav li {
+    font-style: italic;
+    padding-left: 20px;
+    list-style: none;
+}
+
+.nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav li a:hover {
+    text-decoration: underline;
+}
+
+/* ********************** Section Experience  */
+
+.sample {
+    border: 1px solid #FFF;
+    border-radius: 8px;
+    font-style: italic;
+    margin: 20px;
+    margin-right: 40px;
+    margin-left: 40px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+} 
+
+.sample__details {
+    width: auto;
+}
+
+.sample__title{
+    font-size: 30px;
+}
+
+.sample__title:hover {
+    color: #026fff;
+}
+
+.sample__subtitle {
+    color: #7acc2d;
+    font-size: 15px;
+}
+
+.sample__img {
+    padding: 10px;
+    width: 500px;    
+}
+
+/* ********************** Footer  */
+
+.social {
+    margin: auto;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+.social__img {
+    padding: 15px;
+    width: 30px;
+    height: 30px;
+}
+
+.powered__p {
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+/* ********************** @Media Querys  */
+@media screen and ( max-width: 1024px ) {
+    
+}
+
+@media screen and ( max-width: 768px ) {
+    .hero {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .sample {
+        flex-wrap: wrap;
+    }
+
+    .sample__img {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media screen and ( max-width: 480px ) {
+    .social {
+        flex-wrap: wrap;
+        display: block;
+    }
+
+    .social__img {
+        margin-left: 23%;
+    }
+
+    .powered__p {
+        justify-content: center;
+    }
+}
+
+@media screen and ( max-width: 320px ) {
+    .social__img {
+        margin-left: 20%;
+    }
+}
